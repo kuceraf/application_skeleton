@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="logging-pokus:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="logging-pokus.war">
+      <element id="artifact" artifact-name="logging-pokus:war exploded" />
+    </root>
+  </artifact>
+</component>
