@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by Filip on 04.11.2016.
  *
- * Maps to <protocol>://<hostname>:<port>/<root-url>/<servlet-mapping><url-pattern>/test/{testId}
- * e.g.: http://localhost:7001/logging-pokus/api/testEcho/1
+ * Maps to <protocol>://<hostname>:<port>/<context-root>/<servlet-mapping><url-pattern>/test/{testId}
+ * e.g.: http://localhost:7001/app/api/testEcho/1
  */
 @RestController
 @RequestMapping("/testEcho")
