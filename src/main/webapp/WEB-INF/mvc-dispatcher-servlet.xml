@@ -12,7 +12,12 @@
 		http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 
+    <!--
+    Component-scan
+    The dispatcher scans in @Controller annotated classes for mapped methods and detects @RequestMapping annotations
+    -->
     <context:component-scan base-package="cz.fku.*" />
+
     <!-- Enables the Spring MVC @Controller programming model -->
     <mvc:annotation-driven />
 </beans>

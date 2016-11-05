@@ -3,3 +3,5 @@
 .idea/
 logging-pokus.iml
 target/
+.iml/
+src/main/resources/
