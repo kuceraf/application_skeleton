@@ -3,5 +3,5 @@
 .idea/
 logging-pokus.iml
 target/
-.iml/
+*.iml
 jee-components/war/src/main/resources/
