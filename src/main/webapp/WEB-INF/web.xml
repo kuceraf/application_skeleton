@@ -21,7 +21,7 @@
     The file [servlet-name]-servlet.xml should contain all of your Spring Web MVC-specific components (beans).
     -->
     <servlet>
-        <servlet-name>mvc-dispatcher</servlet-name>
+        <servlet-name>rest</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -32,8 +32,8 @@
     All requests starting with <url-pattern> will be handled by the DispatcherServlet instance named <servlet-name>
     -->
     <servlet-mapping>
-        <servlet-name>mvc-dispatcher</servlet-name>
-        <url-pattern>/app/*</url-pattern>
+        <servlet-name>rest</servlet-name>
+        <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
 
     <!--

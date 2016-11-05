@@ -16,7 +16,7 @@
     Component-scan
     The dispatcher scans in @Controller annotated classes for mapped methods and detects @RequestMapping annotations
     -->
-    <context:component-scan base-package="cz.fku.*" />
+    <context:component-scan base-package="cz.fku.controller" />
 
     <!-- Enables the Spring MVC @Controller programming model -->
     <mvc:annotation-driven />
