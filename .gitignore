@@ -4,4 +4,4 @@
 logging-pokus.iml
 target/
 .iml/
-src/main/resources/
+jee-components/war/src/main/resources/
