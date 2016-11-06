@@ -18,18 +18,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/testEcho")
 public class TestController {
-    final Logger logger = LoggerFactory.getLogger(TestController.class);
+    final private Logger logger = LoggerFactory.getLogger(TestController.class);
+
     @RequestMapping(value = "/{testId}", method = RequestMethod.GET)
     public String test(@PathVariable String testId) {
         testLogger();
 //      return value is automatically bound to the web response body
         return testId;
     }
+
 //  logback info:  http://logback.qos.ch/manual/architecture.html
     private void testLogger() {
         logger.info("----------------FKU----------------");
         // print internal state
-//        LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
-//        StatusPrinter.print(lc);
+        LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
+        StatusPrinter.print(lc);
     }
 }
